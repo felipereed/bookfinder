@@ -1,0 +1,51 @@
+* {
+    font-family: Geom;
+}
+
+header {
+    background-color: #EBF8FF;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    padding: 0 20px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    max-width: 40px;
+    margin: 10px;
+}
+
+.menu-container {
+    display: inline-flex;
+}
+
+.menu-items {
+    display: inline-flex;
+}
+
+.logo-container {
+    display: inline-flex;
+}
+
+.book-cover {
+    max-width: 300px;
+    padding: 0 10px;
+}
+
+.book-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
