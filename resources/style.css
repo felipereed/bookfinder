@@ -23,7 +23,7 @@ li {
 }
 
 .logo {
-    max-width: 40px;
+    max-width: 35px;
     margin: 10px;
 }
 
@@ -48,4 +48,58 @@ li {
     display: flex;
     flex-wrap: wrap;
     padding: 0 20px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.main-container-text {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.search-button {
+    background-color: #EBF8FF;
+    border: none;
+    min-width: 200px;
+    min-height: 60px;
+    border-radius: 10px;
+    padding: 15px 32px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    font-size: large;
+}
+
+.footer-container {
+    background-color: #EBF8FF;
+    min-height: 40px;
+    text-align: center;
+    padding: 30px 0;
+    
+}
+
+.section-container {
+    background-color: #F2F2F2;
+}
+
+section h2 {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.book-info {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.more-details-button {
+    background-color: #BDBEBF;
+    color: white;
+    border: none;
+    min-width: 200px;
+    min-height: 60px;
+    border-radius: 10px;
+    padding: 15px 32px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    font-size: large;
 }
