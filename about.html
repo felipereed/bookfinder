@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About — Book Finder</title>
+
+    <link rel="stylesheet" href="./resources/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Geom:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="logo-container" href="./index.html" aria-label="BookFinder home">
+            <img class="logo" src="./images/logo.png" alt="BookFinder logo" />
+            <span class="app-name">BookFinder</span>
+        </a>
+
+        <button class="menu-toggle" type="button" aria-label="Open menu" aria-controls="primary-navigation"
+            aria-expanded="false">
+            <span class="menu-toggle-bar"></span>
+            <span class="menu-toggle-bar"></span>
+            <span class="menu-toggle-bar"></span>
+        </button>
+
+        <nav class="menu-container" id="primary-navigation" aria-label="Primary navigation">
+            <ul class="menu-items">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./search.html">Search</a></li>
+                <li><a href="./categories.html">Categories</a></li>
+                <li><a href="./about.html" aria-current="page">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-container">
+        <section class="hero" aria-labelledby="about-title">
+            <div class="main-container-text">
+                <h1 id="about-title">About BookFinder</h1>
+                <p class="hero-subtitle">
+                    A small project to practice HTML, CSS, and JavaScript — and to help
+                    people find books they’ll love.
+                </p>
+            </div>
+        </section>
+
+        <section class="section-container" aria-labelledby="mission-title">
+            <h2 id="mission-title">What this app does</h2>
+
+            <div class="about-card">
+                <p class="about-text">
+                    BookFinder is a simple front-end project: you can browse featured
+                    books, explore categories, and search by title/author/keyword.
+                </p>
+                <p class="about-text">
+                    Later, you can connect it to a real books API and turn “More details”
+                    into a modal or a full book page.
+                </p>
+            </div>
+        </section>
+
+        <section class="section-container" aria-labelledby="credits-title">
+            <h2 id="credits-title">Credits</h2>
+
+            <div class="about-card">
+                <p class="about-text"><strong>Created by:</strong> Felipe Reed</p>
+                <p class="about-text">
+                    <strong>Stack:</strong> HTML + CSS (mobile-first) + vanilla JS
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <p>Created by Felipe Reed</p>
+        </div>
+    </footer>
+
+    <script src="./resources/script.js"></script>
+</body>
+
+</html>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Book Finder</title>
+    <title>Categories — Book Finder</title>
 
     <link rel="stylesheet" href="./resources/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,7 +20,6 @@
             <span class="app-name">BookFinder</span>
         </a>
 
-        <!-- Hamburger menu (mobile) -->
         <button class="menu-toggle" type="button" aria-label="Open menu" aria-controls="primary-navigation"
             aria-expanded="false">
             <span class="menu-toggle-bar"></span>
@@ -28,58 +27,62 @@
             <span class="menu-toggle-bar"></span>
         </button>
 
-        <!-- Navigation -->
         <nav class="menu-container" id="primary-navigation" aria-label="Primary navigation">
             <ul class="menu-items">
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./search.html">Search</a></li>
-                <li><a href="./categories.html">Categories</a></li>
+                <li><a href="./categories.html" aria-current="page">Categories</a></li>
                 <li><a href="./about.html">About</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="main-container">
-        <!-- Hero -->
-        <section class="hero" aria-labelledby="hero-title">
+        <section class="hero" aria-labelledby="categories-title">
             <div class="main-container-text">
-                <h1 id="hero-title">Find your next book</h1>
+                <h1 id="categories-title">Categories</h1>
                 <p class="hero-subtitle">
-                    Discover new and exciting books curated to your taste
+                    Browse by mood. Pick a category and we’ll show featured books.
                 </p>
-                <a class="search-button" href="./search.html">Search</a>
             </div>
         </section>
 
-        <!-- Featured books -->
-        <section class="section-container" aria-labelledby="featured-title">
-            <h2 id="featured-title">Featured books</h2>
+        <section class="section-container" aria-labelledby="category-list-title">
+            <h2 id="category-list-title">Browse</h2>
+
+            <div class="category-grid">
+                <a class="category-card" href="./search.html?category=fiction">
+                    Fiction
+                </a>
+                <a class="category-card" href="./search.html?category=nonfiction">
+                    Non-fiction
+                </a>
+                <a class="category-card" href="./search.html?category=biography">
+                    Biography
+                </a>
+                <a class="category-card" href="./search.html?category=scifi">
+                    Sci-Fi
+                </a>
+                <a class="category-card" href="./search.html?category=fantasy">
+                    Fantasy
+                </a>
+                <a class="category-card" href="./search.html?category=history">
+                    History
+                </a>
+                <a class="category-card" href="./search.html?category=design">
+                    Design
+                </a>
+                <a class="category-card" href="./search.html?category=kids">
+                    Kids
+                </a>
+            </div>
+        </section>
+
+        <section class="section-container" aria-labelledby="category-featured-title">
+            <h2 id="category-featured-title">Featured in Design</h2>
 
             <div class="book-container">
-                <article class="book-card" data-book-id="1">
-                    <img class="book-cover" src="./images/book1.png"
-                        alt="Cover of The Mountain Path by Susan Matthews" />
-                    <div class="book-info">
-                        <h3 class="book-title">The Mountain Path</h3>
-                        <p class="author">Susan Matthews</p>
-                        <button class="more-details-button" type="button">
-                            More details
-                        </button>
-                    </div>
-                </article>
-
-                <article class="book-card" data-book-id="2">
-                    <img class="book-cover" src="./images/book2.png" alt="Cover of Under the Sea by Edward Marshall" />
-                    <div class="book-info">
-                        <h3 class="book-title">Under the Sea</h3>
-                        <p class="author">Edward Marshall</p>
-                        <button class="more-details-button" type="button">
-                            More details
-                        </button>
-                    </div>
-                </article>
-
-                <article class="book-card" data-book-id="3">
+                <article class="book-card">
                     <img class="book-cover" src="./images/book3.png" alt="Cover of Finding Home by Diane Simpson" />
                     <div class="book-info">
                         <h3 class="book-title">Finding Home</h3>
@@ -90,36 +93,22 @@
                     </div>
                 </article>
 
-                <article class="book-card" data-book-id="4">
+                <article class="book-card">
+                    <img class="book-cover" src="./images/book2.png" alt="Cover of Under the Sea by Edward Marshall" />
+                    <div class="book-info">
+                        <h3 class="book-title">Under the Sea</h3>
+                        <p class="author">Edward Marshall</p>
+                        <button class="more-details-button" type="button">
+                            More details
+                        </button>
+                    </div>
+                </article>
+
+                <article class="book-card">
                     <img class="book-cover" src="./images/book4.png" alt="Cover of Hidden Truths by Rachel West" />
                     <div class="book-info">
                         <h3 class="book-title">Hidden Truths</h3>
                         <p class="author">Rachel West</p>
-                        <button class="more-details-button" type="button">
-                            More details
-                        </button>
-                    </div>
-                </article>
-
-                <article class="book-card" data-book-id="5">
-                    <img class="book-cover" src="./images/book5.png"
-                        alt="Cover of The Legacy of Marie Curie by Gary Hughes" />
-                    <div class="book-info">
-                        <h3 class="book-title">
-                            The Legacy of Marie Curie
-                        </h3>
-                        <p class="author">Gary Hughes</p>
-                        <button class="more-details-button" type="button">
-                            More details
-                        </button>
-                    </div>
-                </article>
-
-                <article class="book-card" data-book-id="6">
-                    <img class="book-cover" src="./images/book6.png" alt="Cover of Blue Horizons by Ann Perkins" />
-                    <div class="book-info">
-                        <h3 class="book-title">Blue Horizons</h3>
-                        <p class="author">Ann Perkins</p>
                         <button class="more-details-button" type="button">
                             More details
                         </button>

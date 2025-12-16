@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Book Finder</title>
+    <title>Search — Book Finder</title>
 
     <link rel="stylesheet" href="./resources/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,7 +20,6 @@
             <span class="app-name">BookFinder</span>
         </a>
 
-        <!-- Hamburger menu (mobile) -->
         <button class="menu-toggle" type="button" aria-label="Open menu" aria-controls="primary-navigation"
             aria-expanded="false">
             <span class="menu-toggle-bar"></span>
@@ -28,11 +27,10 @@
             <span class="menu-toggle-bar"></span>
         </button>
 
-        <!-- Navigation -->
         <nav class="menu-container" id="primary-navigation" aria-label="Primary navigation">
             <ul class="menu-items">
                 <li><a href="./index.html">Home</a></li>
-                <li><a href="./search.html">Search</a></li>
+                <li><a href="./search.html" aria-current="page">Search</a></li>
                 <li><a href="./categories.html">Categories</a></li>
                 <li><a href="./about.html">About</a></li>
             </ul>
@@ -40,23 +38,56 @@
     </header>
 
     <main class="main-container">
-        <!-- Hero -->
-        <section class="hero" aria-labelledby="hero-title">
+        <section class="hero" aria-labelledby="search-title">
             <div class="main-container-text">
-                <h1 id="hero-title">Find your next book</h1>
+                <h1 id="search-title">Search books</h1>
                 <p class="hero-subtitle">
-                    Discover new and exciting books curated to your taste
+                    Type a title, author, or keyword. (Later you can connect this to an
+                    API!)
                 </p>
-                <a class="search-button" href="./search.html">Search</a>
             </div>
         </section>
 
-        <!-- Featured books -->
-        <section class="section-container" aria-labelledby="featured-title">
-            <h2 id="featured-title">Featured books</h2>
+        <section class="section-container" aria-labelledby="search-form-title">
+            <h2 id="search-form-title">Find something to read</h2>
+
+            <form class="search-form" action="#" method="get">
+                <label class="field">
+                    <span class="field-label">Search</span>
+                    <input class="input" type="text" name="q" placeholder="e.g. Marie Curie, fantasy, design…"
+                        autocomplete="off" />
+                </label>
+
+                <div class="search-form-row">
+                    <label class="field">
+                        <span class="field-label">Sort</span>
+                        <select class="select" name="sort">
+                            <option value="relevance">Relevance</option>
+                            <option value="newest">Newest</option>
+                            <option value="rating">Top rated</option>
+                        </select>
+                    </label>
+
+                    <label class="field">
+                        <span class="field-label">Format</span>
+                        <select class="select" name="format">
+                            <option value="all">All</option>
+                            <option value="ebook">eBook</option>
+                            <option value="paperback">Paperback</option>
+                            <option value="audiobook">Audiobook</option>
+                        </select>
+                    </label>
+                </div>
+
+                <button class="more-details-button" type="submit">Search</button>
+            </form>
+        </section>
+
+        <section class="section-container" aria-labelledby="results-title">
+            <h2 id="results-title">Results</h2>
 
             <div class="book-container">
-                <article class="book-card" data-book-id="1">
+                <article class="book-card">
                     <img class="book-cover" src="./images/book1.png"
                         alt="Cover of The Mountain Path by Susan Matthews" />
                     <div class="book-info">
@@ -68,46 +99,11 @@
                     </div>
                 </article>
 
-                <article class="book-card" data-book-id="2">
-                    <img class="book-cover" src="./images/book2.png" alt="Cover of Under the Sea by Edward Marshall" />
-                    <div class="book-info">
-                        <h3 class="book-title">Under the Sea</h3>
-                        <p class="author">Edward Marshall</p>
-                        <button class="more-details-button" type="button">
-                            More details
-                        </button>
-                    </div>
-                </article>
-
-                <article class="book-card" data-book-id="3">
-                    <img class="book-cover" src="./images/book3.png" alt="Cover of Finding Home by Diane Simpson" />
-                    <div class="book-info">
-                        <h3 class="book-title">Finding Home</h3>
-                        <p class="author">Diane Simpson</p>
-                        <button class="more-details-button" type="button">
-                            More details
-                        </button>
-                    </div>
-                </article>
-
-                <article class="book-card" data-book-id="4">
-                    <img class="book-cover" src="./images/book4.png" alt="Cover of Hidden Truths by Rachel West" />
-                    <div class="book-info">
-                        <h3 class="book-title">Hidden Truths</h3>
-                        <p class="author">Rachel West</p>
-                        <button class="more-details-button" type="button">
-                            More details
-                        </button>
-                    </div>
-                </article>
-
-                <article class="book-card" data-book-id="5">
+                <article class="book-card">
                     <img class="book-cover" src="./images/book5.png"
                         alt="Cover of The Legacy of Marie Curie by Gary Hughes" />
                     <div class="book-info">
-                        <h3 class="book-title">
-                            The Legacy of Marie Curie
-                        </h3>
+                        <h3 class="book-title">The Legacy of Marie Curie</h3>
                         <p class="author">Gary Hughes</p>
                         <button class="more-details-button" type="button">
                             More details
@@ -115,7 +111,7 @@
                     </div>
                 </article>
 
-                <article class="book-card" data-book-id="6">
+                <article class="book-card">
                     <img class="book-cover" src="./images/book6.png" alt="Cover of Blue Horizons by Ann Perkins" />
                     <div class="book-info">
                         <h3 class="book-title">Blue Horizons</h3>
